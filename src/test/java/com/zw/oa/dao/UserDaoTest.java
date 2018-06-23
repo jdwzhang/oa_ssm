@@ -16,6 +16,9 @@ public class UserDaoTest {
         userDao = context.getBean(UserDao.class);
     }
 
+    /**
+    * @Description: 测试
+    */
     @Test
     public void testGet() {
         String userNumber = "200802";
