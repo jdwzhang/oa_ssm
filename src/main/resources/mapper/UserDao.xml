@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zw.oa.dao.UserDao">
+    <sql id="userColumns">
+              user_number as userNumber,
+              user_name as userName,
+              user_pwd as password,
+              user_realname as realName,
+              user_gender as gender,
+              user_birth as birth ,
+              dept_number as deptNumber,
+              group_number as groupNumber,
+              user_email as userEmail,
+              user_phone as userPhone,
+              role_number as roleNumber,
+              user_jianli as userResume,
+              user_imgpath as userImgPath,
+              user_salary as userSalary
+    </sql>
+
+    <select id="get" resultType="User" parameterType="string">
+        SELECT
+        <include refid="userColumns"/>
+        FROM oa_user
+        WHERE user_number=#{id}
+    </select>
+</mapper>
