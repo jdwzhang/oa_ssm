@@ -7,7 +7,7 @@ import com.zw.oa.entity.User;
 */
 public interface UserService {
     /**
-    * @Description: 查找单个对象(home branch)
+    * @Description: 查找单个对象(home branch!)
     */
     User get(String id, String pass);
 }
