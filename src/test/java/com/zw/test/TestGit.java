@@ -7,4 +7,7 @@ package com.zw.test;
  * @create: 2018-06-23 22:47
  **/
 public class TestGit {
+    public void test() {
+
+    }
 }
