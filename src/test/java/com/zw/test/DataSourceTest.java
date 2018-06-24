@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 /**
  * @program: oa_ssm
- * @description:
+ * @description:能同步吗
  * @author: zhang wei
  * @create: 2018-06-20 00:14
  **/
